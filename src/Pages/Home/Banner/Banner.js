@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Container } from 'react-bootstrap';
 import './Banner.css'
-import banner1 from '../../../image/banner/banner-1.png'
+import banner1 from '../../../image/banner/banner-5.jpg'
 import banner2 from '../../../image/banner/banner-2.jfif'
 import banner3 from '../../../image/banner/banner-3.jpg'
 
@@ -16,11 +16,12 @@ const Banner = () => {
             <h1 className='text-center mt-2'>
                 Welcome <br></br> <span className='fst-italic fs-4'>To</span>  <br /> <span><h2 className='banner-title'>TOY HOUSE</h2></span>
             </h1>
-           <div>
+           <Container className='banner'>
+           <div >
            <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 h-25"
           src={banner1}
           alt="First slide"
         />
@@ -31,7 +32,7 @@ const Banner = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 h-25"
           src={banner2}
           alt="Second slide"
         />
@@ -43,7 +44,7 @@ const Banner = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 h-25"
           src={banner3}
           alt="Third slide"
         />
@@ -57,6 +58,7 @@ const Banner = () => {
       </Carousel.Item>
     </Carousel>
            </div>
+           </Container>
 
         </div>
     );
