@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import './Header.css'
 
 const Header = () => {
     return (
        <>
       <Navbar collapseOnSelect expand="lg" sticky='top' bg="light" variant="white">
   <Container>
-  <Navbar.Brand href="#home">TOY HOUSE</Navbar.Brand>
+  <Navbar.Brand href="#home" className='fw-bold header-title'>TOY HOUSE</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="m-auto">
@@ -21,7 +22,7 @@ const Header = () => {
       </Nav.Link>
       
     </Nav>
-    <Nav.Link eventKey={2} href="#memes">
+    <Nav.Link className='fw-semibold' href="#memes">
         Login
       </Nav.Link>
     <Nav>
