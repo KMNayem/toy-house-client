@@ -1,6 +1,7 @@
 [
   {
     "id": "6288ebac250d25771105ca8c",
+    "quantity": 10,
     "price": 40,
     "picture": "https://i.ibb.co/925mPCZ/0-27543x.jpg",
     "name": "Edwards Morris",
@@ -8,6 +9,7 @@
   },
   {
     "id": "6288ebacf14a9bf86779c718",
+    "quantity": 30,
     "price": 30,
     "picture": "https://i.ibb.co/4prhxzz/41g-Fo-QS-ig-L.jpg",
     "name": "Delacruz Reese",
@@ -15,6 +17,7 @@
   },
   {
     "id": "6288ebac05897899cd7e869f",
+    "quantity": 21,
     "price": 50,
     "picture": "https://i.ibb.co/nkRhPSS/26518x.jpg",
     "name": "Palmer Justice",
@@ -22,6 +25,7 @@
   },
   {
     "id": "6288ebacbdfc1736e1fb8f93",
+    "quantity": 10,
     "price": 23,
     "picture": "https://i.ibb.co/HttsfdV/vtb-23846-18ohsosoftteddybear-lightbrown-feature4-20201012-0843.jpg",
     "name": "Sadie Matthews",
@@ -29,6 +33,7 @@
   },
   {
     "id": "6288ebacabea52d1f7f6cfe0",
+    "quantity": 17,
     "price": 55,
     "picture": "https://i.ibb.co/sQ431CX/download.jpg",
     "name": "Alvarado Doyle",
@@ -36,6 +41,7 @@
   },
   {
     "_id": "6288ebac9f43854b9b67fa4d",
+    "quantity": 20,
     "price": 47,
     "picture": "https://i.ibb.co/m4jc6q6/51ailu-T3-A1-L-AC-SX425.jpg",
     "name": "Althea Mitchell",
@@ -43,6 +49,7 @@
   },
   {
     "id": "6288ebac9634c8syge3c1463582",
+    "quantity": 17,
     "price": 44,
     "picture": "https://i.ibb.co/tYrM7xn/teddy-bear-soft-toy-5-fit-152-ms-aradhyatoys-original-imafp823tf67g5ph.webp",
     "name": "Zamora Sloan",
@@ -50,6 +57,7 @@
   },
   {
     "id": "6288ebac9634caewt8e3c1463582",
+    "quantity": 23,
     "price": 25,
     "picture": "https://i.ibb.co/Db20b1w/28502-Alt1x.jpg",
     "name": "Zamora Sloan",
@@ -57,6 +65,7 @@
   },
   {
     "id": "6288ebac9634c8eseyzae3c1463582",
+    "quantity": 15,
     "price": 30,
     "picture": "https://i.ibb.co/dryLfX3/big-bear-soft-toy-isolated-260nw-372476527.webp",
     "name": "Zamora Sloan",
@@ -64,6 +73,7 @@
   },
   {
     "id": "6288ebac9set634c8ewset3c1463582",
+    "quantity": 20,
     "price": 60,
     "picture": "https://i.ibb.co/Db20b1w/28502-Alt1x.jpg",
     "name": "Zamora Sloan",
@@ -71,6 +81,7 @@
   },
   {
     "id": "6288ebac9634c8e3c14ujfdyu63582",
+    "quantity": 14,
     "price": 30,
     "picture": "https://i.ibb.co/j6HH598/istockphoto-909772478-612x612.jpg",
     "name": "Zamora Sloan",

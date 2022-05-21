@@ -1,0 +1,10 @@
+.single-product {
+    box-shadow: rgba(8, 7, 7, 0.04) 0px 3px 5px;
+    transition: box-shadow 10s;
+    border: 1px solid pink;
+    border-radius: 30px;
+  }
+  .card-button{
+      background-color: rgb(223, 57, 85);
+      color: wheat;
+  }
