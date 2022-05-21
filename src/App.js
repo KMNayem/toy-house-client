@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Pages/Shared/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>hallo</h1>
-      </header>
+    <div>
+      <Header></Header>
     </div>
   );
 }
