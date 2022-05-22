@@ -21,7 +21,7 @@ const Products = () => {
 
             <div className='row g-4 mt-2'>
             {
-                products.map(products => (
+                products.slice(0, 6).map(products => (
                     <Product  
                     key={products.id} product ={products}
                     ></Product>
