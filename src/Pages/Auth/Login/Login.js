@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 function Login() {
 
@@ -58,6 +59,7 @@ function Login() {
                  Login
                      </Button>
             </Form> 
+            <SocialLogin></SocialLogin>
         </div>
     )
 }
