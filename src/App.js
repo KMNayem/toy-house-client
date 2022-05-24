@@ -9,6 +9,8 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Register from './Pages/Auth/Register/Register';
 import RequireAuth from './Pages/Auth/RequireAuth/RequireAuth';
 import ProductDetails from './Pages/ProductDetails/ProductDetails';
+import ManageItems from './Pages/ManageItems/ManageItems';
+import AddItems from './Pages/AddItems/AddItems';
 
 function App() {
   return (
@@ -25,6 +27,22 @@ function App() {
           element={
             <RequireAuth>
               <ProductDetails></ProductDetails>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/manageitems"
+          element={
+            <RequireAuth>
+              <ManageItems></ManageItems>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/add"
+          element={
+            <RequireAuth>
+              <AddItems></AddItems>
             </RequireAuth>
           }
         ></Route>

@@ -4,7 +4,7 @@ import './product.css'
 
 const Product = ({product}) => {
     const navigate = useNavigate();
-    const { id, quantity, price, picture, name, about    } = product || {};
+    const {_id, quantity, price, picture, name, about    } = product || {};
 
     const handleUseNavigate = (id) => {
         navigate(`/product/${id}`);
@@ -25,7 +25,7 @@ const Product = ({product}) => {
             </small>
           </p>
           <button
-            onClick={() => handleUseNavigate(id)}
+            onClick={() => handleUseNavigate(_id)}
             className="btn card-button rounded-pill"
           >
             Update
