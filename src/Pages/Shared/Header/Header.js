@@ -21,22 +21,31 @@ const Header = () => {
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="m-auto">
       <Nav.Link as={Link} to='/home'>Home</Nav.Link>
-      <Nav.Link as={Link} to='/manageitems'>Manage Items</Nav.Link>
+      
+      <Nav.Link as={Link} to='blogs'>
+        Blogs
+      </Nav.Link>
+      {
+        user && <>
+              <Nav.Link as={Link} to='/manageitems'>Manage Items</Nav.Link>
       <Nav.Link as={Link} to='/add'>Add items</Nav.Link>
       <Nav.Link eventKey={2} href="#memes">
         My Items
       </Nav.Link>
+          </>
+      }
       <Nav.Link as={Link} to='blogs'>
-        Blogs
-      </Nav.Link>
-      
+          Contact
+        </Nav.Link>
     </Nav>
     <Nav>
+      
                             
                             {
                                 user ?
                                     <button className='btn btn-link text-decoration-none' onClick={handleSignOut}>Log out</button>
                                 :
+                                
                                 <Nav.Link as={Link} to="login">
                                 Login
                             </Nav.Link>}
