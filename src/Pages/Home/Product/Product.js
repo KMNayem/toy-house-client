@@ -4,7 +4,7 @@ import './product.css'
 
 const Product = ({product}) => {
     const navigate = useNavigate();
-    const {_id, quantity, price, picture, name, about    } = product || {};
+    const { _id, quantity, price, picture, name, about    } = product || {};
 
     const handleUseNavigate = (id) => {
         navigate(`/product/${id}`);
