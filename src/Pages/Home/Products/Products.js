@@ -24,7 +24,9 @@ const Products = () => {
                 products.slice(0, 6).map(products => (
                     <Product  
                     key={products._id} product ={products}
+                    
                     ></Product>
+                    
                 ))
             }
             </div>
