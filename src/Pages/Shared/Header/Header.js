@@ -29,12 +29,12 @@ const Header = () => {
         user && <>
               <Nav.Link as={Link} to='/manageitems'>Manage Items</Nav.Link>
       <Nav.Link as={Link} to='/add'>Add items</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
+      <Nav.Link as={Link} to='/myitems'>
         My Items
       </Nav.Link>
           </>
       }
-      <Nav.Link as={Link} to='blogs'>
+      <Nav.Link >
           Contact
         </Nav.Link>
     </Nav>

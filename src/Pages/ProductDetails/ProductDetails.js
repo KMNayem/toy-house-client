@@ -1,17 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Card } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const ProductDetails = () => {
-
+    const quantityRef = useRef;
+    
     const navigate = useNavigate();
 
-    const handleUseNavigate = (id) => {
-        navigate(`/product/${id}`);
-      };
+    // const handleUseNavigate = (id) => {
+    //     navigate(`/product/${id}`);
+    //   };
     const { productId } = useParams();
     const [product, setProduct] = useState({});
     const { _id, catagory, name, supplier, price, quantity, desc, img } = product;
+    const adding = () =>{
+        toast.success('Product Updated')
+    }
+
+    const handleAddProduct = e =>{
+        e.preventDefault();
+        const getQuantity = quantityRef.current.value;
+        const countQuantity = parseInt(getQuantity);
+        console.log(countQuantity);
+    }
 
     useEffect( () =>{
         const url = `http://localhost:5000/product/${productId}`;
@@ -21,6 +33,11 @@ const ProductDetails = () => {
         .then(data => setProduct(data));
 
     }, [])
+
+    
+    
+
+
     return (
         <div className='container m-3'>
             <h1 className='text-center m-5'>Your Product Details</h1>
@@ -38,16 +55,15 @@ const ProductDetails = () => {
         <p className="card-text"><small class="text-muted">About: {product.about}</small></p>
       </div>
       <>
+      <div onSubmit={handleAddProduct}>
       <p className='font-bold d-flex'>
           Update your Quantity
-          <input className='w-25 m-2' type='number' />
+          <input  className='w-25 m-2' type='number' />
           </p> 
-      <button
-            onClick={() => handleUseNavigate(product._id)}
-            className="btn  card-button m-2 rounded-pill"
-          >
+      <button onClick={adding} className="btn  card-button m-2 rounded-pill">
             Update
           </button>
+      </div>
       </>
 
           
