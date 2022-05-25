@@ -12,7 +12,23 @@ const ManageItems = () => {
         navigate(`/product/${id}`);
       };
 
-    const [products] = Hooks();
+    const [products, setProducts] = Hooks();
+
+      const handleDelete = id =>{
+          const proceed = window.confirm('Are you sure, want to Delete?');
+          if(proceed){
+              const url =`http://localhost:5000/product/${id}`;
+              fetch(url, {
+                  method: 'DELETE'
+              })
+              .then(res => res.json())
+              .then(data => {
+                  console.log(data);
+                  const remaining = products.filter(product => product._id !== id)
+                  setProducts(remaining);
+              })
+          }
+      }
 
     return (
         <div className='container m-3'>
@@ -42,6 +58,7 @@ const ManageItems = () => {
           >
             Update
           </button>
+          <button onClick={() =>  handleDelete(product._id)} className='btn btn-danger rounded-pill'>Delete</button>
     </div>
   </div>
 </div>
