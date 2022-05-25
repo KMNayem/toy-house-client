@@ -1,24 +1,10 @@
-#live site link,: https://toy-house-b1a2d.web.app
+# #live site link,: https://toy-house-b1a2d.web.app
 
 about the project:
 1) this is made for kids
 2) its vary easy to upadate or delete
 3) you can check the and update your product
 4) you also can delete your product 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
