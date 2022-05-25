@@ -40,6 +40,14 @@ function App() {
           }
         ></Route>
         <Route
+          path="/add"
+          element={
+            <RequireAuth>
+              <AddItems></AddItems>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
           path="/myitems"
           element={
             <RequireAuth>

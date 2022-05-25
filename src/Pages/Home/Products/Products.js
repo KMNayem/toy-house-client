@@ -31,8 +31,8 @@ const Products = () => {
             }
             </div>
             <div className="text-center">
-        <Link to="/manageInventory">
-          <button className="btn manage-btn mt-5 text-center">
+        <Link to="/manageitems">
+          <button  className="btn manage-btn mt-5 text-center">
             Manage Inventories
           </button>
         </Link>
